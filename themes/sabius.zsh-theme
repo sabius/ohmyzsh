@@ -48,10 +48,10 @@ custom_git_prompt() {
     local branch=$(custom_git_branch)
     if [[ -n $git_status ]]; then
       # Repository is dirty or has changes
-      echo "%{$fg[blue]%}on %{$fg[yellow]%}${branch} $(git_changes_summary)"
+      echo "%{$fg[magenta]%}on %{$fg[yellow]%}${branch} $(git_changes_summary)"
     else
       # Repository is clean
-      echo "%{$fg[blue]%}on %{$fg[yellow]%}${branch}"
+      echo "%{$fg[magenta]%}on %{$fg[yellow]%}${branch}"
     fi
   fi
 }
